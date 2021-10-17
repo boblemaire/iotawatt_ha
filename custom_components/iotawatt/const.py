@@ -1,14 +1,9 @@
-"""Constants for the IoTaWatt integration."""
-from __future__ import annotations
+"""Constants for the iotawatt integration."""
 
-import json
-
-import httpx
-
+DEFAULT_ICON = "mdi:flash"
+DEFAULT_SCAN_INTERVAL = 30
 DOMAIN = "iotawatt"
-VOLT_AMPERE_REACTIVE = "VAR"
-VOLT_AMPERE_REACTIVE_HOURS = "VARh"
-
-ATTR_LAST_UPDATE = "last_update"
-
-CONNECTION_ERRORS = (KeyError, json.JSONDecodeError, httpx.HTTPError)
+COORDINATOR = "coordinator"
+IOTAWATT_API = "iotawatt_api"
+SIGNAL_ADD_DEVICE = "iotawatt_add_device"
+SIGNAL_DELETE_DEVICE = "iotawatt_delete_device"
